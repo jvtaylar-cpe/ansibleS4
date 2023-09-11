@@ -1,0 +1,11 @@
+---
+- name: Ping and Print Hello 
+  hosts: all
+  tasks:
+  
+    - name: ping my hosts
+      ping:
+  
+    - name: print message
+      command: echo "Hello Ansible world"
+
